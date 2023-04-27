@@ -5,6 +5,8 @@ import Dice from './components/Dice';
 import ComponentsWithProps from './components/ComponentWithProps';
 import { Component } from 'react';
 import TrainerRender from './components/TrainerRender';
+import MilesToKm from './components/MilestoKm';
+import Car from './components/Cars';
 
 function App() {
 
@@ -23,11 +25,11 @@ function App() {
   
   return (
     // Dice Roller
-    <div class="App">
-      <header className='App-header'>
-        <Dice />
-      </header>
-    </div>
+    // <div class="App">
+    //   <header className='App-header'>
+    //     <Dice />
+    //   </header>
+    // </div>
 /* <>
     <ComponentsWithProps header={"I AM HEADER"}
     content={"I AM CONTENT"} number={15}/>
@@ -35,6 +37,12 @@ function App() {
     {trainerList}
     </ul>
 </> */
+ <div class="App">
+      <header className='App-header'>
+        <MilesToKm />
+        {/* <Car/> */}
+      </header>
+    </div>
 
   );
 }

@@ -65,3 +65,37 @@
 
 
 }
+
+.convertor
+{
+  font-size: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.miles
+{
+  margin-bottom: 0.5vw;
+  width:100%;
+}
+
+.convertor input{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  font-size: 3vw;
+  width: 60%;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border-color: #191919;
+  border-width: 3px;
+  float: right;
+  font-weight: 150;
+
+}
+
+.convertor label{
+  padding: 5px 10px;
+  float: left;
+  font-weight: 100;
+}
