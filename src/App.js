@@ -1,24 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
+import './components/Dice';
+import Dice from './components/Dice';
+import ComponentsWithProps from './components/ComponentWithProps';
+import { Component } from 'react';
+import TrainerRender from './components/TrainerRender';
 
 function App() {
+
+  const trainers =
+  [{"firstName": "fName1",
+  "lastName":"lName1"},
+  {"firstName": "fName2",
+  "lastName":"lName2"},
+  {"firstName": "fName3",
+  "lastName":"lName3"},
+  ]
+
+  let trainerList = trainers.map((item) => {
+    return <TrainerRender fname={item.firstName} lname={item.lastName}/>
+  })
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    // Dice Roller
+    <div class="App">
+      <header className='App-header'>
+        <Dice />
       </header>
     </div>
+/* <>
+    <ComponentsWithProps header={"I AM HEADER"}
+    content={"I AM CONTENT"} number={15}/>
+    <ul>
+    {trainerList}
+    </ul>
+</> */
+
   );
 }
 
