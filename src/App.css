@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -72,6 +72,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  width: 70%;
 }
 
 .miles
@@ -80,13 +81,17 @@
   width:100%;
 }
 
-.convertor input{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.km
+{
+  width: 100%;
+}
 
+.convertor input{
+  font-family:'Courier New', Courier, monospace;
   font-size: 3vw;
   width: 60%;
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-color: #191919;
   border-width: 3px;
   float: right;
@@ -95,7 +100,50 @@
 }
 
 .convertor label{
+  font-family:'Courier New', Courier, monospace;
   padding: 5px 10px;
   float: left;
   font-weight: 100;
+  text-shadow: #000000 2px 2px;
+}
+
+
+.adder
+{
+  font-size: 3vw;
+  margin-top: 30vh;
+  float: top;
+}
+
+.adder input{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 5vw;
+  width: 60%;
+  border-radius: 10px;
+  border-color: #191919;
+  border-width: 3px;
+  font-weight: 150;
+  margin-bottom: 5%;
+
+}
+
+.adder button{
+  font-family:'Courier New', Courier, monospace;
+  padding: 5px 10px;
+  font-weight: 100;
+  font-size: 2vw;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 10px;
+  border-color: #191919;
+  border-width: 3px;
+  width: 80px;
+}
+
+.history
+{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 150;
+
+
 }

@@ -7,6 +7,7 @@ import { Component } from 'react';
 import TrainerRender from './components/TrainerRender';
 import MilesToKm from './components/MilestoKm';
 import Car from './components/Cars';
+import InputAdder from './components/InputAdder';
 
 function App() {
 
@@ -30,17 +31,18 @@ function App() {
     //     <Dice />
     //   </header>
     // </div>
-/* <>
-    <ComponentsWithProps header={"I AM HEADER"}
-    content={"I AM CONTENT"} number={15}/>
-    <ul>
-    {trainerList}
-    </ul>
-</> */
+//  <>
+//     <ComponentsWithProps header={"I AM HEADER"}
+//     content={"I AM CONTENT"} number={15}/>
+//     <ul>
+//     {trainerList}
+//     </ul>
+// </>
  <div class="App">
       <header className='App-header'>
-        <MilesToKm />
+        {/* <MilesToKm /> */}
         {/* <Car/> */}
+        { <InputAdder/>}
       </header>
     </div>
 
