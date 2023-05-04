@@ -5,8 +5,6 @@ const JSONrender = (JSONprop) => {
 
     const dataObjectConvertor = (data) => {
         let output = "";
-        console.log(data);
-
         for (const key in data)
         {
             if(typeof data[key] === 'object' && data[key] !== null)
