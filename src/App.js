@@ -17,6 +17,16 @@ import Users from './components/routing/users';
 import { Route, BrowserRouter, Routes } from 'react-router-dom'
 import NotFound from './components/routing/notfound';
 import TestUseContext from './components/useContext';
+import JSONNav from './components/jsonRouting/JSONnav';
+import JSONrender from './components/jsonRouting/JSONrender';
+
+import userJSON from './resources/users.json';
+import albumJSON from './resources/albums.json';
+import commentJSON from './resources/comments.json';
+import photoJSON from './resources/photos.json';
+import todoJSON from './resources/todos.json';
+import postJSON from './resources/posts.json';
+
 
 function App() {
 
@@ -77,7 +87,24 @@ function App() {
             </Routes>
             </BrowserRouter> */}
 
-            <TestUseContext/>
+            {/* <TestUseContext/> */}
+
+            
+        <BrowserRouter>
+        <JSONNav />
+
+        <Routes>
+            <Route exact path="/" element={<Home/>} />
+            <Route exact path="/albums" element={<JSONrender data={albumJSON}/>} />
+            <Route exact path="/comments" element={<JSONrender data={commentJSON}/>} />
+            <Route exact path="/photos" element={<JSONrender data={postJSON}/>} />
+            <Route exact path="/posts" element={<JSONrender data={photoJSON}/>} />
+            <Route exact path="/todos" element={<JSONrender data={todoJSON}/>} />
+            <Route exact path="/users" element={<JSONrender data={userJSON}/>} />
+
+
+            </Routes>
+            </BrowserRouter>
       
       
       </header>
