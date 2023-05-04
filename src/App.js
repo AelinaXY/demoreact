@@ -72,7 +72,10 @@ function App() {
         {/* { <InputAdder/>} */}
         
         {/* Router */}
-{/* 
+
+
+        {/*Regular Routing */}
+{/*
         <BrowserRouter>
         <Nav />
 
@@ -90,6 +93,8 @@ function App() {
             {/* <TestUseContext/> */}
 
             
+
+        {/* JSON Rendering*/}
         <BrowserRouter>
         <JSONNav />
 
