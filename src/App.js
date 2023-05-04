@@ -26,6 +26,7 @@ import commentJSON from './resources/comments.json';
 import photoJSON from './resources/photos.json';
 import todoJSON from './resources/todos.json';
 import postJSON from './resources/posts.json';
+import FilmAPI from './components/filmAPI';
 
 
 function App() {
@@ -95,7 +96,7 @@ function App() {
             
 
         {/* JSON Rendering*/}
-        <BrowserRouter>
+        {/* <BrowserRouter>
         <JSONNav />
 
         <Routes>
@@ -109,7 +110,9 @@ function App() {
 
 
             </Routes>
-            </BrowserRouter>
+            </BrowserRouter> */}
+
+            <FilmAPI/>
       
       
       </header>
